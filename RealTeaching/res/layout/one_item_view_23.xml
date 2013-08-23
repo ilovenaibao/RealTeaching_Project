@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/diy_title_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:text="123456789"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" >
+
+        <RelativeLayout
+            android:id="@+id/play_flash_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/popup_menu_margins"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_marginTop="5sp"
+            android:background="@drawable/chose_morlist"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/play_flash_view_bg_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/play_flash"
+                        android:src="#80000000" />
+
+                    <ImageView
+                        android:id="@+id/play_flash_view_img_update"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@id/play_flash_view_bg_img"
+                        android:layout_alignTop="@id/play_flash_view_bg_img"
+                        android:src="@drawable/flashstatus_update_up" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/play_flash_view_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/flashstatus_download_up" />
+            </RelativeLayout>
+
+            <!-- com.besta.flash.Flash -->
+
+            <com.besta.flash.FlashView
+                android:id="@+id/play_flash_webview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/play_flash_view_img"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageButton
+                android:id="@+id/close_play_flash_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/play_flash_webview"
+                android:background="#00000000"
+                android:contentDescription="@string/appShutdownStr"
+                android:src="@drawable/popup_menu_close_up" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/summary_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingBottom="5sp"
+        android:paddingTop="5sp" >
+
+        <LinearLayout
+            android:id="@+id/summary_wv_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/summary_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/icon_gs" />
+
+                <TextView
+                    android:id="@+id/summary_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@id/summary_img"
+                    android:paddingLeft="5dp"
+                    android:text="123456789"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/chose_morlist" >
+
+                <com.besta.app.realteaching.MyWebView
+                    android:id="@+id/summary_webview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <!-- <com.besta.app.realteaching.MyCrossWebView -->
+                <!-- android:id="@+id/summary_webview" -->
+                <!-- android:layout_width="match_parent" -->
+                <!-- android:layout_height="wrap_content" /> -->
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

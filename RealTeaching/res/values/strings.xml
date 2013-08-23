@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Real Teaching</string>
+    <string name="NoBestaFlash">Please install Flash Player.</string>
+    <string name="NoAdobeFlash">No Adobe Flash</string>
+    <string name="contentDownloadStr">Please go to Besta Market to update data downloader!</string>
+    <string name="not_found_data">data文件不存在或者data文件有誤！</string>
+    <string name="pingliang_bt">練習</string>
+    <string name="diy_bt">實驗DIY</string>
+    <string name="str_progressDlg_message_phy">Search P.&amp;C. Lab...</string>
+    <string name="str_progressDlg_message_bio">Search Biology Lab...</string>
+    <string name="ProgressDialog_content">Searching...</string>
+    <string name="title_gz_math">Mathematics of Junior High School</string>
+    <string name="title_gz_phy">Physics of Junior High School</string>
+    <string name="title_gz_che">Chemistry of Junior High School</string>
+    <string name="title_gz_bio">Biology of Junior High School</string>
+    <string name="title_gz_earth">Earth Sciences</string>
+    <string name="appShutdownStr">application has shutdown!</string>
+    <string name="appShutdownStr_readData">application cannot loading data!</string>
+    <string name="s030640">This data can only be played on Besta device!</string>
+
+    <dimen name="popup_menu_margins">16dp</dimen>
+
+    <string name="downloading">資料下載中……</string>
+
+</resources>

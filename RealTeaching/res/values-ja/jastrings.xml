@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ビデオ授業</string>
+    <string name="pingliang_bt">練習</string>
+    <string name="diy_bt">實驗DIY</string>
+    <string name="str_progressDlg_message_phy">理化実験課検索...</string>
+    <string name="str_progressDlg_message_bio">生物実験課検索...</string>
+    <string name="ProgressDialog_content">検索中…</string>
+    <string name="title_gz_math">中学数学</string>
+    <string name="title_gz_phy">中学物理</string>
+    <string name="title_gz_che">中学化学</string>
+    <string name="title_gz_bio">中学生物</string>
+    <string name="title_gz_earth">地球科学</string>
+    <string name="s030640">この内容はBesta本体だけで再生できる。</string>
+    <string name="downloading">資料下載中……</string>
+
+</resources>

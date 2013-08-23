@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.besta.app.realteaching"
+    android:installLocation="auto"
+    android:versionCode="29"
+    android:versionName="1.0.29" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="besta.permission.INTERNAL_DATA" />
+    <!-- Create and delete in sdcard permission -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- Write data in sdcard permission -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- <uses-permission android:name="android.permission.group.STORAGE" /> -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Check and Select Internet connect status -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+
+    <uses-feature android:glEsVersion="0x00020000" />
+
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK" >
+    </uses-permission>
+
+    <application
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/NoTitle_1" >
+        <activity
+            android:name=".RealTeachingActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="@string/app_name" >
+            <intent-filter>
+
+                <!-- <action android:name="android.besta.app.realteaching.main" /> -->
+
+
+                <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CrossWebViewRealTeachingActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="@string/app_name" >
+            <intent-filter>
+
+                <!-- <action android:name="android.besta.app.realteaching.main" /> -->
+
+
+                <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ViewPagerRealTeachingActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.besta.app.realteaching.main" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="com.besta.app.realteaching.DownloadReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED" >
+                </action>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" >
+                </action>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.besta.util.contentsdownload.intent.complete" />
+                <action android:name="com.besta.util.contentsdownload.intent.cancelall" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.besta.app.realteaching.ViewPagerDownloadReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED" >
+                </action>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" >
+                </action>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.besta.util.contentsdownload.intent.complete" />
+                <action android:name="com.besta.util.contentsdownload.intent.cancelall" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.besta.app.realteachingtestcallapp.TestaCallApp"
+            android:label="@string/app_name" >
+            <intent-filter>
+
+                <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+                <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.android.mylib.exceptioninfo.MyErrorPrintfActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

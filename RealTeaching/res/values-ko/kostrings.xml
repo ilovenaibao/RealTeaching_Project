@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">동영상강의</string>
+    <string name="pingliang_bt">練習</string>
+    <string name="diy_bt">實驗DIY</string>
+    <string name="str_progressDlg_message_phy">이화학실험 검색...</string>
+    <string name="str_progressDlg_message_bio">생물학실험 검색...</string>
+    <string name="ProgressDialog_content">검색중…</string>
+    <string name="title_gz_math">중학교 수학</string>
+    <string name="title_gz_phy">중학교 물리</string>
+    <string name="title_gz_che">중학교 화학</string>
+    <string name="title_gz_bio">중학교 생물</string>
+    <string name="title_gz_earth">지구과학</string>
+    <string name="s030640">본 데이터베이스는 단 베스타 디바이스에만 재생 가능합니다!</string>
+    <string name="downloading">資料下載中……</string>
+
+</resources>

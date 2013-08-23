@@ -1,0 +1,5 @@
+out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/src/core/java/android/content/pm/IResolveListener.java: \
+  frameworks/base/core/java/android/content/pm/IResolveListener.aidl \
+  frameworks/base/core/java/android/content/Intent.aidl \
+  frameworks/base/core/java/android/content/IntentFilter.aidl 
+

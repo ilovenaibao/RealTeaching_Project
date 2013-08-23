@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="libs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/besta.android.view.crosssearchwin.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/com.besta.getfilepath.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/besta.android.media.playvoice.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/FlashView.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/besta.android.view.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/besta.android.imectrl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/besta.android.content.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/besta.android.media.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/besta.android.util.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/besta.android.misc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/besta.android.drm.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/besta.android.os.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/android-support-v4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

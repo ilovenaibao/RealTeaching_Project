@@ -1,0 +1,6 @@
+out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/src/core/java/android/view/IDisplayManager.java: \
+  frameworks/base/core/java/android/view/IDisplayManager.aidl \
+  frameworks/base/core/java/com/android/internal/view/IInputContext.aidl \
+  frameworks/base/core/java/com/android/internal/view/IInputMethodClient.aidl \
+  frameworks/base/core/java/android/content/res/Configuration.aidl 
+

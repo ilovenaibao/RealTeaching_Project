@@ -1,0 +1,4 @@
+out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/src/media/java/android/media/IRingtonePlayer.java: \
+  frameworks/base/media/java/android/media/IRingtonePlayer.aidl \
+  frameworks/base/core/java/android/net/Uri.aidl 
+
